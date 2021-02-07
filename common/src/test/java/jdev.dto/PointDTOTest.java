@@ -27,7 +27,7 @@ public class PointDTOTest {
         System.out.println(point.toJson());
     }
 
-    @Test
+    @Test                                                               //Обратное преобразование выполняем здесь
     public void decodeDto() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         PointDTO dto = mapper.readValue(expected, PointDTO.class);
